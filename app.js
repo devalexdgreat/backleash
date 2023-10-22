@@ -25,7 +25,7 @@ const normalizePort = val => {
 const app = express();
 
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT);
 app.set('port', port);
 app.listen(port);
 
